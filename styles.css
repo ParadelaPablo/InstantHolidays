@@ -1,0 +1,472 @@
+/* Estilos globales del sitio */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Agdasima', sans-serif;
+}
+
+/* Estilo para el título */
+h1 {
+    font-size: 350px;
+    margin: 0;
+    padding: 20px;
+}
+
+.custom-h1 {
+    font-size: 350px;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* Estilo para el menú */
+.menu {
+    background-color: #b7e4c7;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 64px;
+    margin-bottom: 65px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.menu ul li a:hover {
+    color: #ffffff;
+}
+
+/* Estilos para los divs de 850px */
+.green-div {
+    height: calc(75vh - 75px);
+    background-color: #b7e4c7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.green-div-2 {
+    height: calc(100vh - 100px);
+    background-color: #1b4332;
+    color: #333;
+    background-color: rgb(2, 58, 35);
+    background-image: url(https://www.rockandpop.cl/wp-content/uploads/2022/06/globos-aerostaticos-santiago.jpg);
+    background-blend-mode: luminosity;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    color: transparent; /* Hacemos el texto transparente */
+}
+
+.green-div-2 h2 {
+    font-size: 100px;
+    color: #fff; /* Color del texto */
+    padding: 420px;
+    margin: 0;
+    font-weight: 70px;
+    line-height: 1.1em; 
+    text-align: center;
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+.green-div-3 {
+    height: calc(100vh - 100px);
+    background-color: #CCFFCC;
+    color: #333;
+    font-size: 24px;
+}
+
+.green-div-4 {
+    background-color: #4a8465;
+
+}
+
+.green-div-5 {
+    height: calc(100vh - 100px);
+    background-color: #CCFFCC;
+    color: #333;
+    font-size: 24px;
+    background-color: rgb(2, 58, 35);
+    background-image: url(https://fotolector.diariovasco.com/2019/data/media/1/IMG-20190825-WA0011.jpg);
+    background-blend-mode: luminosity;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    color: transparent; /* Hacemos el texto transparente */
+}
+
+.green-div-5 h2 {
+    font-size: 100px;
+    color: #fff; /* Color del texto */
+    padding: 420px;
+    margin: 0;
+    font-size: 120px;
+    font-weight: 70px;
+    line-height: 1.1em; 
+    text-align: center;
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+
+.green-div-7 {
+    height: calc(100vh - 100px);
+    background-color: #52b788;
+    color: #333;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
+}
+
+.green-div-8 {
+    height: 80vh; /* Ajusta la altura según lo desees */
+    background-color: #52956c;
+    color: #333;
+    margin-bottom: 50px; /* Agrega un margen inferior para evitar que el contenido quede oculto por el footer */
+    margin-top: 20px; /* Agrega un margen superior para separar del contenido anterior */
+}
+
+
+
+/* Estilos para el footer */
+footer {
+    color: #152f15; /* Cambia el color de texto a blanco o cualquier otro color legible */
+    /* Otros estilos del footer, si los tienes */
+}
+
+
+.card {
+    display: flex;
+    height: 200px; /* Ajusta la altura según lo desees */
+    width: 50%;
+}
+
+/* Estilos adicionales para otros elementos del sitio */
+/* Agrega aquí tus estilos adicionales según sea necesario */
+
+/* Media Queries para responsividad */
+/* Estilos para tamaños de pantalla pequeños (smartphones, tablets) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 10px;
+    }
+
+    .menu ul li {
+        font-size: 30px;
+    }
+
+    .green-div h1 {
+        font-size: 50px;
+    }
+
+    .green7 h2 {
+        font-size: 60px !important; /* Establece el tamaño de fuente para los elementos h4 dentro de .green7 */
+    }
+
+
+    .green7 h4 {
+        font-size: 25px !important; /* Establece el tamaño de fuente para los elementos h4 dentro de .green7 */
+    }
+    
+    
+
+    .green-div p {
+        font-size: 30px;
+    }
+
+    .green-div-2 h2 {
+        font-size: 40px;
+        padding: 100px;
+        margin-top: 170px;
+    }
+
+    .green-div-3 h2 {
+        font-size: 40px;
+    }
+
+    .green-div-4 h2 {
+        font-size: 40px;
+    }
+
+    .green-div-5 h2 {
+        font-size: 40px;
+        padding: 150px;
+        margin-top: 160px;
+    }
+
+
+
+    #segundo h3 {
+        font-size: 45px !important;
+        justify-content: center;
+        margin: 10px;
+        margin-top: 30px;
+    }
+
+    #segundo p {
+        font-size: 22px !important;
+        justify-content: center;
+        margin: 20px;
+    }
+
+
+    #calendar {
+        width: 100%;
+        height: auto;
+    }
+
+    #tarjetaContainer {
+
+        align-items: center;
+        font-size: 15px;
+        height: 280px;
+        text-align: center;
+        margin-left: 60px;
+        padding: 30px;
+    
+    
+    }
+    
+    #tarjetaContainer h2 {
+        font-size: 30px;
+    }
+    
+    #tarjetaContainer div {
+        height: 230px;
+    }
+    
+    .card {
+        width: 80%;
+
+    }
+
+
+    .green-div-8 div {
+        height: 300px !important;
+        position: relative;
+        top: -50px;
+  
+    }
+
+    .card h5 {
+        margin-top: 50px
+    };
+
+}
+
+/* Estilos para tamaños de pantalla medianos (tablets grandes, laptops) */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    h1 {
+        font-size: 220px;
+    }
+
+    .menu ul li {
+        font-size: 40px;
+    }
+
+    .green-div h1 {
+        font-size: 120px;
+    }
+
+    .green-div p {
+        font-size: 40px;
+    }
+
+    .green7 h4 {
+        font-size: 50px; /* Establece el tamaño de fuente para los elementos h4 dentro de .green7 */
+    }
+    
+    .green-div-2 {
+        height: calc(100vh - 50px); /* Altura más pequeña en pantallas más pequeñas */
+        font-size: 16px; /* Tamaño de texto aún más pequeño en dispositivos móviles */
+      }
+
+      .green-div-2 h2 {
+        font-size: 80px;
+        padding: 100px;
+        margin-top: 220px;
+    }
+
+
+    .green-div-3 h2 {
+        font-size: 60px;
+    }
+
+    .green-div-4 h2 {
+        font-size: 60px;
+    }
+
+    .green-div-5 h2 {
+        font-size: 60px;
+        padding: 250px;
+        margin-top: 150px;
+    }
+
+
+    .green7 h2 {
+        font-size: 90px !important; /* Establece el tamaño de fuente para los elementos h4 dentro de .green7 */
+    }
+
+
+    .green7 h4 {
+        font-size: 45px !important; /* Establece el tamaño de fuente para los elementos h4 dentro de .green7 */
+    }
+    
+    
+#tarjetaContainer {
+
+    align-items: center;
+    font-size: 21px;
+    height: 280px;
+    text-align: center;
+    margin-left: 230px;
+    padding: 30px;
+    height: 350px;
+
+
+}
+
+#tarjetaContainer h2 {
+    font-size: 35px;
+}
+
+#tarjetaContainer div {
+    height: 290px;
+    width: 250px;
+}
+
+
+    #segundo h3 {
+        font-size: 80px !important;
+    }
+
+    #segundo p {
+        font-size: 50px !important;
+    }
+
+
+    .card {
+        width: 70%;
+    }
+
+    #calendar {
+        width: 100%;
+        height: auto;
+
+        justify-content: center;
+    }
+
+    .green-div-8 {
+        height: auto;
+    }
+    .green-div-8 div {
+        height: 350px !important;
+    }
+
+}
+
+/* Estilos para tamaños de pantalla grandes (computadoras de escritorio, pantallas grandes) */
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 290px;
+    }
+
+    .menu ul li {
+        font-size: 64px;
+    }
+
+    .green-div h1 {
+        font-size: 220px;
+    }
+
+    .green-div p {
+        font-size: 24px;
+    }
+
+    .green-div-2 h2 {
+        font-size: 100px;
+        padding: 340px;
+    }
+
+    .green-div-3 h2 {
+        font-size: 24px;
+    }
+
+    .green-div-4 h2 {
+        font-size: 24px;
+    }
+
+    .green-div-5 h2 {
+        font-size: 100px;
+        padding: 320px;
+    }
+
+    #segundo h3 {
+        font-size: 60px;
+    }
+
+    #segundo h3 p {
+        font-size: 15px;
+    }
+
+    #tarjetaContainer {
+
+        align-items: center;
+        font-size: 25px;
+        height: 280px;
+        text-align: center;
+        margin-left: 230px;
+        padding: 30px;
+        height: 400px;
+    
+    }
+    
+    #tarjetaContainer h2 {
+        font-size: 40px;
+    }
+    
+    #tarjetaContainer div {
+        height: 340px;
+    }
+    
+
+
+    .card {
+        width: 50%;
+    }
+
+    #calendar {
+        width: 800px;
+        height: 800px;
+    }
+
+    .green-div-8 {
+        height: 80vh;
+    }
+
+    .green-div-8 div {
+        height: 300px !important;
+    }
+
+}

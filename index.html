@@ -6,131 +6,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Agdasima&display=swap" rel="stylesheet">
 
-    
+    <link rel="stylesheet" href="styles.css">
+
     <title>Instant Holidays</title>
-    <style>
-        .container {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        .menu {
-            margin-bottom: 20px;
-        }
-        .menu ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .menu ul li {
-            display: inline-block;
-            margin-right: 10px;
-        }
-        .form label {
-            display: block;
-            margin-bottom: 5px;
-            text-align: left;
-        }
-        .form select,
-        .form input[type="number"] {
-            width: 100%;
-            padding: 5px;
-            margin-bottom: 10px;
-        }
-        .form button {
-            width: 100%;
-            padding: 10px;
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        .form button:hover {
-            background-color: #45a049;
-        }
-        .alert {
-            padding: 10px;
-            margin-top: 20px;
-            background-color: #f0f0f0;
-            border: 1px solid #ddd;
-        }
-
-        #calendar {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        #tarjetaContainer {
-            display: grid;
-            place-items: center;
-         
-        }
-        /* Resto de los estilos */
-    </style>
-
 </head>
 <body>
-    <div class="container">
-        <h1>Instant Holidays</h1>
+    <div class="green-div d-flex justify-content-center align-items-center">
+        <h1 class="custom-h1">Instant Holidays</h1>
+    </div>
     
-        <div class="menu">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </div>
-   
-   <br>
-   <br>
-   
-        <div id="calendar"></div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
-       
-        <br>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="green-div-2 d-flex justify-content-center">
+                <h2>Tus vacaciones 
+                    perfectas en 
+                    segundos</h2>
+        <a href="https://framerusercontent.com/images/yFZPEdqahoA0wzVHZiDMflBXzc.jpg?scale-down-to=512"></a>
 
-        <div class="form">
-            <label for="destino">A qué país te gustaría viajar?</label>
-            
-            <select id="destino" name="destino">
-                <option value="">Seleccione un país</option>
-                <option value="Francia">Francia</option>
-                <option value="Inglaterra">Inglaterra</option>
-                <option value="Países Bajos">Países Bajos</option>
-                <option value="Portugal">Portugal</option>
-                <option value="Italia">Italia</option>
-                <option value="Suecia">Suecia</option>
-            </select>
-            <br>
-            <br>
-            <label for="ciudad">Selecciona la ciudad:</label>
-            <select id="ciudad" name="ciudad" disabled></select>
-
-            <p id="diasRecomendados"></p>
-            <p id="precioPasaje"></p>
-            <p id="precioHospedaje"></p>
-
-            <label for="dias">Cuántos días te gustaría quedarte?</label>
-            <input type="number" id="dias" name="dias" min="1">
-            
-            <button id="calcularBtn">Calcular</button>
-        </div>
-    
-        <div class="alert alert-success" id="costoTotal"></div>
-        <div class="alert alert-danger" id="invalidDestino" style="display: none;">Por favor, seleccione un destino válido.</div>
     </div>
 
+    <div class="green-div-7 d-flex justify-content-center align-items-center" style="height: 80vh;">
+        <div class="green7">
+            <h2 class="text-center" style="font-size: 90px;"> ¿Cansado de planificar?</h2>
+            <br>
+            <h4 class="text-center" style="font-size: 50px;">
+                Con Instant Holidays, olvídate del estrés y la frustración de planificar un viaje por tu cuenta.
+            </h4>
+            <br>
+            <h4 class="text-center" style="font-size: 50px;">
+                Hemos diseñado una plataforma única que te permite elegir tu destino y recibir un plan en menos de 20 segundos.
+            </h4>
+            <br>
+            <h4 class="text-center" style="font-size: 50px;">
+                ¡No más molestias ni quebraderos de cabeza! Bendice tus deseos de última hora y déjate sorprender por nuestras sugerencias en un abrir y cerrar de ojos.
+            </h4>
+        </div>
+    </div>
+    
+
+
+    <div class="form green-div-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+        <div>
+            <label for="destino" style="font-size: 24px;">A qué país te gustaría viajar?</label>
+<select id="destino" name="destino" style="font-size: 20px;">
+  <!-- Elimina el atributo "value" predeterminado -->
+  <option value="">Seleccione un país</option>
+  <option value="Francia">Francia</option>
+  <option value="Inglaterra">Inglaterra</option>
+  <option value="Países Bajos">Países Bajos</option>
+  <option value="Portugal">Portugal</option>
+  <option value="Italia">Italia</option>
+  <option value="Suecia">Suecia</option>
+</select>
 <br>
 <br>
 <br>
-    <div id="tarjetaContainer"></div>
+<label for="ciudad" style="font-size: 24px;">Selecciona la ciudad:</label>
+<select id="ciudad" name="ciudad" disabled style="font-size: 20px;"></select>
+
+            <p id="diasRecomendados" style="font-size: 24px;"></p>
+            <p id="precioPasaje" style="font-size: 24px;"></p>
+            <p id="precioHospedaje" style="font-size: 24px;"></p>
+            <div id="calendar" class="fc-view-container" style="background-color: #ffffff;"></div>
+            <!-- Agregamos un fondo blanco para el calendario -->
+         <label for="dias" style="font-size: 24px;">Cuántos días te gustaría quedarte?</label>
+            <input type="number" id="dias" name="dias" min="1" style="font-size: 20px;">
+            <button id="calcularBtn" style="font-size: 20px; padding: 10px 20px; background-color: #3a883a; color: #fff; border: none; cursor: pointer;">Calcular</button>
+         <!-- Agregamos estilos al botón -->
+            <div id="tarjetaContainer""></div></div>
+
+            <div class="alert alert-danger" id="invalidDestino" style="display: none;">Por favor, seleccione un destino válido.</div>      
+        </div>
+    </div>
+
+    <div class="green-div-5 d-flex justify-content-center">
+
+        <h2>Rápido, fácil y económico</h2>
+
+    </div>
+
+    <div class="green-div d-flex justify-content-center align-items-center flex-column" id="segundo" style="text-align: center; height: 80vh;">
+        <h3 class="text-center" style="font-size: 80px;">Porqué Instant Holidays?</h3>
+        <br>
+        <p class="text-center" style="font-size: 50px;">Ofrecemos un servicio ágil y eficiente, perfecto para los viajeros más espontáneos y ocupados. ¡Nuestro enfoque minimalista contribuye a que cada viaje sea único!</p>
+    </div>
+    
+<!--    <div class="green-div-3">
+        Aquí puede ir contenido para el segundo div de 850px.
+    </div> -->
+
+    
+
+    <div class="green-div-8 d-flex justify-content-center align-items-center" style="height: 80vh;">
+        <div class="row justify-content-center">
+            <div class="col-sm-6 mb-3 mb-sm-0 d-flex justify-content-center align-items-center">
+                <div class="card" style="font-size: 28px; height: 20vh">
+                    <div class="card-body text-center"> <!-- Agregamos "text-center" aquí -->
+                        <h5 class="card-title">Review de Travelista</h5>
+                        <br>
+                        <p class="card-text">La experiencia con Instant Holidays ha sido espectacular. Nos ahorró tiempo y nos brindó excelentes opciones de viaje.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 d-flex justify-content-center align-items-center">
+                <div class="card" style="font-size: 28px; height: 20vh">
+                    <div class="card-body text-center"> <!-- Agregamos "text-center" aquí -->
+                        <h5 class="card-title">Review de TurismoYa</h5>
+                        <br>
+                        <p class="card-text">En estos tiempos ajetreados, Instant Holidays es la solución perfecta para planificar unas vacaciones sin complicaciones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Footer -->
+        <footer class="text-center d-flex" style="background-color: #f1f1f1;">
+            <!-- Grid container -->
+            <div class="container pt-4">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+          
+                <!-- Twitter -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+          
+                <!-- Google -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-google"></i
+                ></a>
+          
+                <!-- Instagram -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+          
+                <!-- Linkedin -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <!-- Github -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2020 Copyright:
+              <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+
+
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
     <script src="javascript.js"></script>
+
 </body>
 </html>
